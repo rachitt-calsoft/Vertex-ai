@@ -26,7 +26,7 @@ MODELS = {
 }
 
 EMBED_MODEL = "models/embedding-001"
-INPUT_DIR = "/home/automailer/sales-poc/vertex_docs"
+INPUT_DIR = "/docs"
 CHROMA_DIR = "./chroma_db"
 
 def initialize_llm(model_name: str) -> Gemini:
