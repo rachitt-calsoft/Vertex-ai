@@ -15,6 +15,11 @@ from llama_index.core.node_parser import SimpleNodeParser
 from llama_index.vector_stores.chroma import ChromaVectorStore
 import chromadb
 
+__import__('pysqlite3')
+import sys
+
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 # Set up environment variables
 os.environ["GOOGLE_API_KEY"] = "AIzaSyDjvW_o6-C5SvO5LNGJkdUfyrvzqXDYPzs"
 
